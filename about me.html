@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Panca Puspita Sari</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: #1a1a1d;
+    }
+
+    /* ====== NAVBAR ====== */
+    nav {
+      background-color: #0f141d;
+      padding: 15px 0;
+      display: flex;
+      justify-content: center;
+      gap: 45px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      color: #d6d6d6;
+      text-decoration: none;
+      padding: 8px 20px;
+      border-radius: 24px;
+      font-size: 16px;
+      transition: .25s;
+    }
+    nav a:hover,
+    nav a.active {
+      background-color: #2f3646;
+      color: white;
+    }
+
+    /* ====== HEADER AREA ====== */
+    .header {
+      background-color: #7a6c5d;
+      padding: 50px 40px 40px 40px;
+      color: white;
+      text-align: center; /* BIAR JUDUL KE TENGAH */
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 34px;
+      font-weight: 800;
+    }
+    .header p {
+      margin-top: 8px;
+      font-size: 16px;
+    }
+
+    /* ====== MAIN CARD ====== */
+    .container {
+      padding: 40px 50px;
+      background-color: #d3c2a5;
+      min-height: 100vh;
+    }
+
+    .card {
+      background-color: #7a6c5d;
+      padding: 25px;
+      border-radius: 20px;
+      color: white;
+      margin-top: 25px;
+      display: flex;
+      gap: 25px;
+      align-items: center;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+    }
+
+    .card img {
+      width: 150px;
+      height: 150px;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+
+    .item-title {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .inner-box {
+      background-color: #1d2331;
+      padding: 20px;
+      border-radius: 18px;
+      margin-top: 25px;
+      color: white;
+    }
+
+    /* ====== SKILLS ====== */
+    .skill-tag {
+      background-color: #1d2331;
+      color: white;
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 14px;
+      margin: 5px 8px 5px 0;
+      font-size: 14px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    }
+
+    /* ====== LOCATION CARD ====== */
+    .location {
+      background-color: #7a6c5d;
+      padding: 25px;
+      border-radius: 20px;
+      margin-top: 30px;
+      color: white;
+      min-height: 160px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    }
+
+    .location h3 {
+      margin-top: 0;
+    }
+
+    .map-btn {
+      display: inline-block;
+      background-color: #1d2331;
+      padding: 8px 18px;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    /* ====== FOOTER CONTACT AREA ====== */
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+      margin-top: 35px;
+    }
+
+    .footer-left, .footer-right {
+      background-color: #1d2331;
+      padding: 25px;
+      border-radius: 18px;
+      color: white;
+      min-height: 250px;
+    }
+
+    .footer-right input,
+    .footer-right textarea {
+      width: 100%;
+      padding: 10px;
+      background-color: #0f141d;
+      border: none;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      color: white;
+      font-size: 14px;
+    }
+
+    .footer-right button {
+      background-color: #6a5e4f;
+      padding: 10px 20px;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 5px;
+    }
+
+    .footer {
+      background-color: #0f141d;
+      height: 90px;
+      margin-top: 50px;
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about me.html" class="active">About Me</a>
+    <a href="#">Hash</a>
+    <a href="#">Block</a>
+    <a href="#">Block Chain</a>
+    <a href="#">ECC Signature</a>
+    <a href="#">Konsensus</a>
+  </nav>
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>PANCA PUSPITA SARI</h1>
+    <p>Mahasiswi | Multimedia | UI/UX Design | Web Development</p>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+
+    <!-- ABOUT CARD -->
+    <div class="card">
+      <img src="kak Panca no BG.png" alt="">
+      <div>
+        <div class="item-title">About Me</div>
+        <p>
+          Halo nama saya Panca Puspita Sari (biasa dipanggil Panca).  
+          Saya seorang mahasiswi Politeknik Elektronika Negeri Surabaya yang berasal dari Banyuwangi.
+          Saya suka desain dan fotografi. Saat ini saya mengambil kuliah di bidang Multimedia dan Konten Kreatif.
+        </p>
+
+        <p><b>Kontak:</b><br>
+          087712346678<br>
+          pancapuspita03@gmail.com<br>
+          @_epancaaa
+        </p>
+      </div>
+    </div>
+
+    <!-- PENDIDIKAN -->
+    <div class="inner-box">
+      <div class="item-title">Pendidikan</div>
+      <p>• Politeknik Elektronika Negeri Surabaya – Teknologi Rekayasa Multimedia (2023–sekarang)<br>
+         • SMK Negeri 1 Siliragung – Teknik Komputer dan Jaringan (2020–2023)</p>
+    </div>
+
+    <!-- PENGALAMAN -->
+    <div class="inner-box">
+      <div class="item-title">Pengalaman</div>
+      <p>• Medinfo Kampanye – Pemkab Banyuwangi<br>
+         • Magang di Studio Foto Banyuwangi<br>
+         • Anggota Multimedia & Konten Kreatif Event Kampus<br>
+         • Content Creator & Design Instagram (Freelance)</p>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="inner-box">
+      <div class="item-title">Skills</div>
+
+      <span class="skill-tag">Copywriting</span>
+      <span class="skill-tag">Digital Marketing</span>
+      <span class="skill-tag">Graphic Design</span>
+      <span class="skill-tag">Content Creator</span>
+      <span class="skill-tag">Audio & Video Editing</span>
+      <span class="skill-tag">Back-End</span>
+      <span class="skill-tag">Teamwork</span>
+      <span class="skill-tag">Time Management</span>
+    </div>
+
+    <!-- LOCATION -->
+    <div class="location">
+      <h3>📍 Lokasi</h3>
+      <p>Dusun Petahunan, Desa Jajag, Banyuwangi</p>
+
+      <!-- MAP UTAMA -->
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.084969057594!2d114.230083!3d-8.135667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd141a8fae6a09f%3A0xe4c2cf5c3b3c698!2sDusun%20Plalangan%2C%20Desa%20Kajarharjo%2C%20Banyuwangi!5e0!3m2!1sid!2sid!4v1709999999999"
+        width="100%"
+        height="250"
+        style="border:0; border-radius:12px; margin-top:15px;"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+
+      <a class="map-btn" href="https://maps.app.goo.gl/WjdTUfUVBRjyEKko9" target="_blank">
+        Buka Google Maps
+      </a>
+    </div>
+
+    <!-- FOOTER CONTACT GRID -->
+    <div class="footer-grid">
+
+      <div class="footer-left">
+        <h3>Kontak</h3>
+        <p><b>Rumah</b><br>
+        Dusun Plalangan, Desa Kradenan, Banyuwangi</p>
+
+        <a class="map-btn" href="https://maps.app.goo.gl/WjdTUfUVBRjyEKko9" target="_blank">
+          Buka Google Maps
+        </a>
+
+        <!-- MAP KONTAK -->
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.084969057594!2d114.230083!3d-8.135667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd141a8fae6a09f%3A0xe4c2cf5c3b3c698!2sDusun%20Plalangan%2C%20Desa%20Kajarharjo%2C%20Banyuwangi!5e0!3m2!1sid!2sid!4v1709999999999"
+          width="100%"
+          height="200"
+          style="border:0; border-radius:12px; margin-top:15px;"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </div>
+
+      <div class="footer-right">
+        <h3>Hubungi Saya</h3>
+
+        <label>Nama</label>
+        <input type="text" placeholder="Nama anda">
+
+        <label>Email</label>
+        <input type="text" placeholder="Email aktif">
+
+        <label>Nomer Telepon</label>
+        <input type="text" placeholder="08xxxxxxx">
+
+        <label>Pesan</label>
+        <textarea rows="4" placeholder="Tulis pesan anda disini..."></textarea>
+
+        <button>Kirim Pesan</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer"></div>
+
+</body>
+</html>

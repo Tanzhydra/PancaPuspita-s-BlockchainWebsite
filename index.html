@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workshop Teknologi Blockchain</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #1A1A1D;
+      color: #fff;
+    }
+
+    /* ================= NAVBAR ================= */
+    nav {
+      background-color: #1A1A1D;
+      padding: 15px 0;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 2px solid #000;
+    }
+
+    nav a {
+      color: #dcdcdc;
+      text-decoration: none;
+      font-size: 14px;
+      padding: 8px 16px;
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      background-color: #3B1C32;
+      color: #fff;
+    }
+
+    /* ================== HERO ================== */
+    .hero {
+      background-color: #D8C6A0;
+      color: #222;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 32px;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .hero p.sub {
+      font-size: 14px;
+      margin-top: -10px;
+      color: #333;
+    }
+
+    .btn-hero {
+      margin-top: 30px;
+      background-color: #6A1E55;
+      color: white;
+      border: none;
+      padding: 10px 28px;
+      border-radius: 25px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn-hero:hover {
+      background-color: #a64b7a;
+    }
+
+    /* ================== CONTENT ================== */
+    .content {
+      background-color: #6A5D4D;
+      padding: 40px 60px;
+    }
+
+    .content h2 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .content p {
+      font-size: 14px;
+      line-height: 1.5;
+      max-width: 700px;
+    }
+
+    .menu-title {
+      font-style: italic;
+      margin-top: 25px;
+      margin-bottom: 20px;
+    }
+
+    /* ================== MENU GRID ================== */
+    .menu-grid {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .menu-box {
+      background-color: #1A1A2E;
+      color: #dcdcdc;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.3);
+      transition: 0.3s;
+      font-size: 13px;
+    }
+
+    .menu-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .menu-box h3 {
+      font-size: 15px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    /* ================== FOOTER ================== */
+    footer {
+      background-color: #1A1A1D;
+      padding: 30px;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    .footer-icon {
+      width: 40px;
+      opacity: 0.7;
+    }
+
+    @media(max-width: 900px) {
+      .menu-grid {
+        grid-template-columns: 1fr;
+      }
+      .content {
+        padding: 40px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ================ NAVBAR ================ -->
+<nav>
+  <a href="#" class="active">Home</a>
+  <a href="about me2.html">About Me</a>
+  <a href="#">Hash</a>
+  <a href="#">Block</a>
+  <a href="#">Block Chain</a>
+  <a href="#">ECC Signature</a>
+  <a href="#">Konsensus</a>
+</nav>
+
+<!-- ================ HERO SECTION ================ -->
+<section class="hero">
+  <p>Selamat Datang</p>
+  <h1>Workshop Teknologi Blockchain</h1>
+  <p class="sub">Pengenalan | Dasar Teori | Cara Penggunaan | Algoritma</p>
+
+  <button class="btn-hero">Pelajari Lebih Lanjut</button>
+</section>
+
+<!-- ================ CONTENT ================ -->
+<section class="content">
+  <h2>Petunjuk Penggunaan</h2>
+  <p>
+    Website ini dirancang untuk membantu memahami konsep dan simulasi berbagai teknik dalam Blockchain Technology.
+  </p>
+
+  <p class="menu-title">Menu Bar yang tersedia:</p>
+
+  <div class="menu-grid">
+    <div class="menu-box">
+      <h3>// About Me</h3>
+      <p>Informasi data diri lengkap.</p>
+    </div>
+
+    <div class="menu-box">
+      <h3><> Hash</h3>
+      <p>Masukkan input teks untuk mendapatkan hasil SHA-256 Hash.</p>
+    </div>
+
+    <div class="menu-box">
+      <h3>[] Block</h3>
+      <p>Mengenal block dengan input data dan hash otomatis.</p>
+    </div>
+
+    <div class="menu-box">
+      <h3>() Block Chain</h3>
+      <p>Simulasi rantai Block yang saling terhubung satu sama lain.</p>
+    </div>
+
+    <div class="menu-box">
+      <h3>() ECC Signature</h3>
+      <p>Buat Public Key, Private Key, dan digital signature.</p>
+    </div>
+
+    <div class="menu-box">
+      <h3>% Konsensus</h3>
+      <p>Simulasi proses validasi block & voting node.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================ FOOTER ================ -->
+<footer>
+  <img src="https://cdn-icons-png.flaticon.com/512/888/888879.png" class="footer-icon">
+  <p>© 2025 Blockchain Workshop</p>
+</footer>
+
+</body>
+</html>
