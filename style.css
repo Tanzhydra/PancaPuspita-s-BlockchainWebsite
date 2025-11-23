@@ -1,0 +1,48 @@
+/* Reset kecil */
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;color:#222;background:#f4f7fb}
+
+/* NAV */
+.nav{display:flex;justify-content:space-between;align-items:center;padding:16px 28px;background:#0f1724;color:#fff}
+.logo{font-weight:700;font-size:18px}
+.tag{font-size:12px;opacity:0.85;margin-left:10px}
+.nav-right .nav-link{color:#fff;text-decoration:none;margin-left:18px;font-weight:600}
+.nav-right .nav-link:hover{text-decoration:underline;opacity:0.95}
+
+/* HERO */
+.hero{padding:64px 20px;background:linear-gradient(120deg,#075985,#06b6d4);color:#fff;text-align:center}
+.small-hero{padding:36px 20px}
+.hero-inner h1{margin:0;font-size:32px}
+.lead{margin-top:8px;opacity:0.95}
+.btn{display:inline-block;margin-top:14px;padding:10px 16px;background:#fff;color:#075985;border-radius:8px;text-decoration:none;font-weight:700}
+
+/* CONTAINER */
+.container{max-width:1100px;margin:28px auto;padding:0 18px}
+
+/* CARD */
+.card{background:#fff;padding:22px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.06);margin-bottom:20px}
+.two-col{display:flex;gap:24px;flex-wrap:wrap}
+.two-col > div{flex:1;min-width:240px}
+
+/* PROFILE */
+.profile-card{display:flex;gap:20px;align-items:flex-start}
+.profile-img{width:170px;height:170px;object-fit:cover;border-radius:12px;border:4px solid #fff;box-shadow:0 8px 20px rgba(2,6,23,0.08)}
+.profile-left{flex:0 0 180px}
+.profile-right{flex:1}
+
+/* SKILLS GRID */
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-top:12px}
+.skills-grid > div{background:#f1f5f9;padding:10px;border-radius:8px;text-align:center;font-weight:600}
+
+/* FOOTER */
+.footer{background:#0f1724;color:#fff;padding:18px 20px;margin-top:24px}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;max-width:1100px;margin:0 auto}
+
+/* Helpers */
+.muted{color:#6b7280;font-size:13px}
+.code{font-family:monospace;background:#111827;color:#fff;padding:2px 6px;border-radius:4px}
+@media (max-width:720px){
+  .profile-card{flex-direction:column;align-items:center;text-align:center}
+  .profile-left{flex-basis:auto}
+  .footer-inner{flex-direction:column;gap:10px}
+}
